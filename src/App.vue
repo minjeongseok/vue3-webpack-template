@@ -1,19 +1,13 @@
 <template>
-    <h1>{{ message }}</h1>
-    <Hello />
+    <Header />
+    <RouterView />
 </template>
 
 <script>
-import Hello from "~/components/Hello";
-
+import Header from "~/components/Header";
 export default {
     components: {
-        Hello,
-    },
-    data() {
-        return {
-            message: "App.vue message: Hello Vue3 !",
-        };
+        Header,
     },
 };
 </script>
